@@ -91,4 +91,4 @@ export const reducer = (state, action) => {
 
   export function useProductReducer(initialState) {
     return useReducer(reducer, initialState);
-  }
+  } //gives functionality for updating state by running it through custom reducer function
