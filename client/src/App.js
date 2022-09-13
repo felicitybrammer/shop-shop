@@ -51,6 +51,32 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
             </Switch>
+            {/* <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              <Route
+                path="/orderHistory"
+                element={<OrderHistory />}
+              />
+              <Route
+                path="/products/:id"
+                element={<Detail />}
+              />
+              <Route
+                path="*"
+                element={<NoMatch />}
+              />
+            </Routes> */}
           </StoreProvider>
         </div>
       </Router>

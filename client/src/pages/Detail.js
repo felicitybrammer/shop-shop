@@ -15,15 +15,14 @@ import Cart from '../components/Cart';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
-  const { products, cart } = state;
   const { id } = useParams();
 
   const [currentProduct, setCurrentProduct] = useState({});
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
+  const { products, cart } = state;
   
-
   useEffect(() => {
     if (products.length) {
       setCurrentProduct(products.find((product) => product._id === id));
