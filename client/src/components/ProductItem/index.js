@@ -15,6 +15,7 @@ function ProductItem(item) {
   
   const [state, dispatch] = useStoreContext();
   const { cart } = state;
+  
   const addToCart = () => {
     // find the cart item with the matching id
     const itemInCart = cart.find((cartItem) => cartItem._id === _id);
